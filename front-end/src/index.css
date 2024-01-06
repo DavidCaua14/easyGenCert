@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+label{
+    font-weight: bold;
+}
+
+input, select{
+    margin-top: 8px;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 1em;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.error, .success{
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+.error{
+    color: rgb(75, 13, 13);
+    background-color: rgb(253, 209, 209);
+    border: 1px solid rgb(243, 139, 139);
+}
+
+.success{
+    color: rgb(13, 75, 13);
+    background-color: rgb(209, 253, 209);
+    border: 1px solid rgb(139, 243, 139);
+}
+
+.validation-input{
+    border-color: #ee5555;
+}
+
+.validation-message{
+    font-weight: bold;
+    color: #ee5555;
+}
+
+a{
+    text-decoration: none;
+}
+
+h6{
+    font-size: 1.25em;
+}
+
+h5 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 2.125em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+@media(max-width: 680px){
+    h3 {
+        font-size: 1.375em;
+    }
+    
+    h2 {
+        font-size: 1.475em;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+}

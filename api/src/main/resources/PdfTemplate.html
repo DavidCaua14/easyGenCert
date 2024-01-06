@@ -1,0 +1,106 @@
+<html lang="pt-br">
+<head>
+    <title>Certificado</title>
+    <style>
+
+        @page { 
+            size: landscape; 
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #fff;
+            color: #4d4d4d;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            height: 680px;
+            width: 100%;
+            display: table;
+        }
+
+        .container{
+            height: 100%;
+            border: 10px ridge #0494FC;
+            text-transform: uppercase;
+            display: table-cell;
+            vertical-align: middle;
+            background-color: #f8f8f8;
+        }
+
+        .table{
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .primary{
+            text-align: center;
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .primary h1{
+            margin-bottom: 34px;
+        }
+
+        .primary h2{
+            margin-bottom: 34px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #0262A8;
+        }
+
+        .primary h3{
+            margin-bottom: 34px;
+        }
+
+        .primary p{
+            margin-bottom: 34px;
+        }
+
+        .secondary {
+            font-weight: bold;
+        }
+
+        .text{
+            width: 450px;
+            word-wrap: break-word;
+        }
+
+        .date{
+            width: 300px;
+        }
+
+        span{
+            color: #0262A8;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table class="table">
+            <tr class="primary">
+                <td colspan="2">
+                    <h1>Certificado de {CERTIFICATETYPE}</h1>
+                    <h3>Certificamos que o aluno</h3>
+                    <h2>{STUDENTNAME}</h2>
+                </td>
+            </tr>
+            <tr class="secondary">
+                <td class="text">
+                    <p>Concluiu o curso <span>{COURSENAME}</span> certificado pela <span>{ISSUINGORGANIZATION}</span> com carga horária de <span>{WORKLOADS} hora (s)</span>.</p>
+                </td>
+                <td class="date">
+                    <p>EMITIDO EM:
+                        <span>{DATEOFISSUEMONTH}</span>
+                            de
+                        <span>{DATEOFISSUEYEAR}</span>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
